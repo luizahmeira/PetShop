@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="pasta_js/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="headerPrincipal">
+        <div class="logo">
+            <a href="index.html"><img src="imagem/logo_petshop.png" alt="Logo do Site"></a>
+        </div>
+        <div class="nome-site">
+            <h1>Clientes</h1>
+        </div>
+        <div class="user-info">
+            <a href="cadastro.html"><img src="imagem/usuario.png" alt="Fictitious Photo" id="user-photo"></a>
+            <p id="user-login-info">Usuário não autenticado</p>
+        </div>
+    </header>
+
+    <div id="menu">
+        <a href="index.html">Home</a>
+        <a href="saibaMais.html">Saiba mais</a>
+        <a href="login.html">Login</a>
+        <a href="clientes.html">Clientes</a>
+    </div>
+
+    <main id="servicos">
+        <div class="servico">
+            <img class="imagem2" src="imagem/cachorro_cami.jpg" alt="Rações e Acessórios">
+            <div class="alinha1">
+            <h2>Nicozinho</h2>
+            <p>Nico, um dos nosso clientes regulares é muito brincalhão e fofinho!</p>
+            <button class="btn-servicos">
+                <a href="saibaMais.html#racaoAcessorio">Saiba mais</a>
+            </button>
+            </div>
+        </div>
+
+        <div class="servico">
+            <img class="imagem2" src="imagem/jackzinho.jpg" alt="Rações e Acessórios">
+            <div class="alinha1">
+            <h2>Jackzinho</h2>
+            <p>Jack, que era um cliente de longa data do PetShop veio a virar estrelinha a poucos meses, mas sempre viverá em nossos corações.</p>
+            <button class="btn-servicos">
+                <a href="saibaMais.html#racaoAcessorio">Saiba mais</a>
+            </button>
+            </div>
+        </div>
+    </main>
+
+
+    <label for="page-mode">Page Mode:</label>
+    <select id="page-mode" onchange="MudarCorPagina()">
+        <option value="normal">Normal</option>
+        <option value="customizado">Custom</option>
+    </select>
+
+    <footer>Equipe: Camile e Luiza</footer>   
+
+</body>
+</html>

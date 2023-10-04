@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="pasta_js/cadastro.js"></script>
+</head>
+<body>
+
+    <header class="headerCadastro">
+        <div class="logo">
+            <a href="index.html"><img src="imagem/logo_petshop.png" alt="Logo do Site"></a>
+        </div>
+        <div class="nome-site">
+            <h1>Cadastro</h1>
+        </div>
+    </header>
+
+    <div id="menu">
+        <a href="index.html">Home</a>
+        <a href="saibaMais.html">Saiba mais</a>
+        <a href="login.html">Login</a>
+        <a href="clientes.html">Clientes</a>
+    </div>
+    
+    <main class="mainCadastro">
+        <form id="cadastro-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="genero">Gênero:</label>
+            <input class="masculino" type="radio" id="masculino" name="genero" value="masculino"> Masculino
+            <input class="feminino" type="radio" id="feminino" name="genero" value="feminino"> Feminino<br>
+    
+            <label for="dataNascimento">Data Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required><br>
+    
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br>
+
+                
+            <label for="documento">Mostre seu bichinho:</label>
+            <input type="file" id="documento" name="documento"><br>
+ 
+            <label for="confirmacao">Confirmação:</label>
+            <input class="confirmacao" type="checkbox" id="confirmacao" name="confirmacao" value="yes" required> Receber e-mail de confirmação <br> 
+    
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+
+    <label for="page-mode">Page Mode:</label>
+    <select id="page-mode" onchange="MudarCorPagina()">
+        <option value="normal">Normal</option>
+        <option value="customizado">Custom</option>
+    </select>
+
+    <footer>Equipe: Camile e Luiza</footer>     
+</body>
+</html>

@@ -1,0 +1,426 @@
+*{
+    margin: 0px;
+}
+
+/* Estilos padrão */
+body.modo-normal {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos para o modo noturno */
+body.modo-noturno {
+    background-color: darkseagreen;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Estilos do cabeçalho */
+.headerPrincipal {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.headerPrincipal.modo-normal {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.headerPrincipal.modo-noturno {
+    background-color: lightyellow;
+    color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.headerMenu{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+
+.headerLogin {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.headerLogin.modo-normal {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.headerLogin.modo-noturno {
+    background-color: darkseagreen;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.headerCadastro {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    padding: 5px;
+}
+
+.headerCadastro.modo-normal {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    padding: 5px;
+}
+
+.headerCadastro.modo-noturno {
+    background-color: darkseagreen;
+    color: #eee;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Estilos da logo */
+.logo img {
+    max-width: 100px; /* Ajuste a largura da logo conforme necessário */
+}
+
+/* Estilos do nome do site */
+.nome-site h1 {
+    margin: 0;
+}
+
+/* Estilos da logo */
+.user-info img {
+    max-width: 50px; /* Ajuste a largura da logo conforme necessário */
+}
+
+/* Estilos do nav */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+nav li::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    background-color: lightgray;
+}
+
+main.modo-normal{
+    background-color: lightgray;
+}
+
+main.modo-noturno{
+    background-color: beige;
+}
+
+.mainSaibaMais{
+    /*display: flex;*/
+    margin:auto;
+    padding: 5px;
+    background-color: lightgray;
+    /*justify-content: center; /* Centralizar horizontalmente */
+   /* align-items: center; /* Centralizar verticalmente */
+}
+
+.mainLogin {
+   /* max-width: 800px;*/
+    display: flex;
+    margin:auto;
+    padding: 100px;
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    background-color: lightgray;
+}
+
+.mainLogin.modo-noturno {
+    /* max-width: 800px;*/
+     display: flex;
+     margin:auto;
+     padding: 100px;
+     justify-content: center; /* Centralizar horizontalmente */
+     align-items: center; /* Centralizar verticalmente */
+     background-color: beige;
+ }
+
+.mainCadastro {
+   /* max-width: 800px;*/
+   display: flex;
+   margin:auto;
+   padding: 100px;
+   justify-content: center; /* Centralizar horizontalmente */
+   align-items: center; /* Centralizar verticalmente */
+   background-color: lightgray;
+}
+
+.mainCadastro.modo-noturno {
+    /* max-width: 800px;*/
+    display: flex;
+    margin:auto;
+    padding: 100px;
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    background-color: beige;
+ }
+
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+
+}
+
+.masculino {
+    width: 5%;
+    padding: 10px;
+    margin-top: 10px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feminino {
+    width: 5%;
+    padding: 10px;
+    margin-top: 10px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.confirmacao {
+    width: 10%;
+    margin: 15px;
+    border: 1px solid #ccc;
+}
+
+input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    /*margin: 15px;*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: max-content;
+}
+
+.mensagem_erro_login {
+    background-color: darkred;
+    color: white;
+    cursor: pointer;
+    width: 260px;
+}
+
+/* Estilo para o menu */
+#menu {
+    background-color: #555;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;/
+}
+
+/* Estilo para os itens do menu */
+#menu a {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+   /* border:1px solid #ccc;*/
+   border-right: 1px solid #757575;
+    text-decoration: none;
+   /* padding: 10px 202px;*/
+    display: block;
+}
+
+/* Estilo para os itens do menu quando hover */
+#menu a:hover {
+    background-color: #757575;
+
+}
+
+/* Estilos para os quadrinhos de serviços */
+.servico {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    background-color: #fff;
+}
+
+.servico img {
+    /*max-width: 200px; /* Tamanho máximo da imagem */
+    margin-bottom: 5px;
+}
+.imagem1 {
+    max-width: 300px;
+}
+
+.imagem2 {
+    max-width: 350px;
+}
+
+.imagem3 {
+    max-width: 200px;
+}
+
+.servico h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.servico p {
+    font-size: 1rem;
+}
+
+/* Estilos específicos para o conteúdo da página principal */
+#servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.alinha{
+    padding-top: 31px;
+}
+.alinha1{
+    padding-top: 4px;
+}
+.alinha2{
+    padding-top: 20px;
+}
+
+/* Estilos para o rodapé dos quadrinhos (opcional) */
+.btn-servicos {
+    margin: 5px;
+}
+
+.descricaoServicos {
+    display: flex;
+   /* width: 400px;*/
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: left;
+    text-align: left;  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #f9f9f9;
+}
+.descricaoServicos div{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.descricaoServicos h2{
+    font-size: 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+.descricaoServicos h3{
+    margin: 10px;
+    font-size: 20px;
+}
+.descricaoServicos h4{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.descricaoServicos p{
+    margin-left: 29px;
+    font-size: 15px;
+}
+.descricaoServicos li{
+    margin-top: 10px;
+    font-size: 15px;
+}

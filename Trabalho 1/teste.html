@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="numeroMaior">
+        <button onclick="defineCor()">Comparação de números</button>
+            <p class="style" >Aperte no botão para comparar os números inseridos</p> 
+
+    <script>
+        function MudarCorPagina() {
+            const Seletor = document.getElementById("page-mode");
+            const body = document.body;
+
+            if (Seletor.value === "customizado") {
+                body.classList.add('modo-noturno');
+                body.classList.remove('modo-normal'); // Remova a classe do modo normal (se existir)
+            } else if (Seletor.value === "normal") {
+                body.classList.add('modo-normal');
+                body.classList.remove('modo-noturno'); // Remova a classe do modo noturno (se existir)
+            }
+        }
+    </script>
+
+    <label for="page-mode">Page Mode:</label>
+    <select id="page-mode" onchange="MudarCorPagina()">
+        <option value="normal">Normal</option>
+        <option value="customizado">Custom</option>
+    </select>
+
+    <input onclick="defineCor()" type="radio" id="cor-fundo-branca" name="cores">
+    <label for="cor-fundo-branca">Fundo Branco</label>
+    <input onclick="defineCor1()" type="radio" id="cor-fundo-verde" name="cores">
+    <label for="cor-fundo-verde">Fundo Verde</label>
+    </main>
+</body>
+</html>

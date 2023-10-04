@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="pasta_js/login.js"></script>
+</head>
+<body>
+    <header class="headerLogin">
+        <div class="logo">
+            <a href="index.html"><img src="imagem/logo_petshop.png" alt="Logo do Site"></a>
+        </div>
+        <div class="nome-site">
+            <h1>Login</h1>
+        </div>
+        <div class="user-info">
+            <a href="cadastro.html"><img src="imagem/usuario.png" alt="Fictitious Photo" id="user-photo"></a>
+            <p id="user-login-info">Usuário não autenticado</p>
+        </div>
+    </header>
+
+    <div id="menu">
+        <a href="index.html">Home</a>
+        <a href="saibaMais.html">Saiba mais</a>
+        <a href="login.html">Login</a>
+        <a href="clientes.html">Clientes</a>
+    </div>
+    
+    <main class="mainLogin">
+        <form id="loginForm">
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="login" required><br>
+    
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br>
+    
+            <button type="button" onclick="authenticate()">Autenticar</button>
+        </form>
+    </main>
+
+    <label for="page-mode">Page Mode:</label>
+    <select id="page-mode" onchange="MudarCorPagina()">
+        <option value="normal">Normal</option>
+        <option value="customizado">Custom</option>
+    </select>
+
+    <footer>Equipe: Camile e Luiza</footer>     
+</body>
+</html>
